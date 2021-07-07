@@ -1,0 +1,41 @@
+extends layout
+
+block styles
+    link(rel="stylesheet" href="css/booking.css")
+
+block content
+  .row
+    .col-sm-12
+      .row
+        .col-md-6.offset-md-6
+          form.main_form
+            .titlepage
+              h2 BOOK A CAR WASH WITH US
+            .row
+              .col-md-12
+                select
+                  option(value='0') Choose Car Wash Package
+                  option(value='1') FULL WASH
+                  option(value='2') ENGINE
+                  option(value='3') BODA BODA
+                  option(value='2') SMALL CAR
+                  option(value='2') MEDIUM CAR
+              .col-md-12
+                select
+                  option(value='0') Choose Car Type 
+                  option(value='1') SMALL CAR
+                  option(value='2') MEDIUM SIZE
+                  option(value='3') LARGE
+                  option(value='4') OTHER
+              .col-md-12
+                select
+                  option(value='0') PAYMENT
+                  option(value='1') AIRTEL MONEY
+                  option(value='2') MTN MOMO
+                  option(value='3') CASH
+              .col-md-12.bench
+                input.contactus(placeholder='ENTER YOUR NAME' type='text' name='uname')
+              .col-md-12.bench
+                input.contactus(placeholder='ENTER YOUR CONTACT INFORMATION' type='tel' name='telephone')
+              .col-sm-12
+                button.find_btn(href='') BOOK NOW!

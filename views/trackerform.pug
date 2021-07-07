@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  main.container
+    .bg-light.p-5.rounded.mt-3
+      h1 Car TraCker
+      form(method='POST')
+        hr
+        label#icon(for='arrivalTime')
+          i.fa.fa-clock-o
+        input#arrivalTime(type='text' onclick="(this.type='time')" name='check In' placeholder='Arrival Time' required='')
+        label#icon(for='date')
+          i.fa.fa-clock-o
+        input#date(type='text' onclick="(this.type='date')" name='date' placeholder='Date' required='')
+        label#icon(for='washer')
+          i Z-
+        input#washer(type='text' name='carWaher' placeholder='Car Washer' required='')
+        label#icon(for='numberPlate')
+          i.fa.fa-car
+        input#numberPlate(type='text' name='car' placeholder='Car Number Plate' required='')
+        label#icon(for='carColor')
+          i.fa.fa-car
+        input#carColor(type='text' name='car' placeholder='Car Color' required='')
+        label#icon(for='carType')
+          i.fa.fa-car
+        input#carType(type='text' name='car' placeholder='Car Type' required='')
+        label#icon(for='washpackage')
+          i.fa.fa-car
+        select#washer(type='text' name='carWasher' placeholder='Car wash Package')
+          option(value='car-wash-package' selected='') Car Wash package
+          option(value='Full-Wash') Full Wash
+          option(value='Engine') Engine
+          option(value='Boda-Boda') Boda Boda
+          option(value='Small-Cars') Small Cars
+          option(value='Medium-Car') Medium Car
+        hr
+        .btn-block
+          button(type='submit' href='/') Submit

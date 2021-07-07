@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  main.container
+    .bg-light.p-5.rounded.mt-3
+      h1 Login
+      form(action='/')
+        hr
+        .account-type
+          input#radioOne(type='radio' value='none' name='account' checked='')
+          label.radio(for='radioOne') Administration
+          input#radioTwo(type='radio' value='none' name='account')
+          label.radio(for='radioTwo') Manager
+        hr
+        label#icon(for='name')
+          i.fa.fa-user
+        input#name(type='text' name='name' placeholder='Name' required='')
+        label#icon(for='name')
+          i.fa.fa-unlock-alt
+        input#name(type='password' name='name' placeholder='Password' required='')
+        hr
+        .btn-block
+          p
+            a(href='#') Privacy Policy for Zaabu Washing Limited
+            | .
+          button(type='submit' href='tracker.html') Submit

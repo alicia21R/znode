@@ -1,0 +1,110 @@
+doctype html
+head
+  title= title
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=Edge')
+  meta(name='description' content='')
+  meta(name='keywords' content='')
+  meta(name='author' content='')
+  meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+  link(rel='stylesheet' href='css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/font-awesome.min.css')
+  link(rel='stylesheet' href='css/aos.css')
+  link(rel='stylesheet' href='css/owl.carousel.min.css')
+  link(rel='stylesheet' href='css/owl.theme.default.min.css')
+  // MAIN CSS
+  link(rel='stylesheet' href='css/style.css')
+// MENU BAR
+nav.navbar.navbar-expand-lg.position-absolute
+  .container
+    a.navbar-brand(href='index.html')
+      i.fa.fa-car
+      |               ZaWash
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link(href='index.html') Home
+        li.nav-item
+          a.nav-link.smoothScroll(href='#contact') Contact
+        li.nav-item
+          a.nav-link(href='register.html') Register
+// CONTACT
+section.contact.section-padding
+  .container
+    .row
+      .col-lg-6.mx-auto.col-md-7.col-12.py-5.mt-5.text-center(data-aos='fade-up')
+        h1.mb-4
+          | Zaabu Washing Bay is located along 
+          strong Mawanda Road
+          |  We are always 
+          strong open
+          |  on week days and on weekends from 
+          br
+          |  8:00am - 8:00pm
+        p
+          | we also hire youth around kampala
+          br
+          |  Register Here 
+          a(href='register.html') zawash@gmail.com
+        p Please leave your message here to keep in touch.
+      .col-lg-8.mx-auto.col-md-10.col-12
+        form.contact-form(action='/about' method='post' data-aos='fade-up' data-aos-delay='300' role='form')
+          .row
+            .col-lg-6.col-12
+              input.form-control(type='text' name='name' placeholder='Name')
+            .col-lg-6.col-12
+              input.form-control(type='email' name='email' placeholder='Email')
+            .col-lg-12.col-12
+              textarea.form-control(rows='6' name='message' placeholder='Message')
+            .col-lg-5.mx-auto.col-7
+              button#submit-button.form-control(type='submit' name='submit') Send Message
+footer#contact.site-footer
+  .container
+    .row
+      .col-lg-5.mx-lg-auto.col-md-8.col-10
+        h1.text-white(data-aos='fade-up' data-aos-delay='100')
+          | Quality service 
+          strong For You
+          |  only.
+      .col-lg-3.col-md-6.col-12(data-aos='fade-up' data-aos-delay='200')
+        h4.my-4 Contact Info
+        p.mb-1
+          i.fa.fa-phone.mr-2.footer-icon
+          |                     +257 712345678
+        p
+          a(href='#')
+            i.fa.fa-envelope.mr-2.footer-icon
+            |                       hello@zawash.com
+      .col-lg-3.col-md-6.col-12(data-aos='fade-up' data-aos-delay='300')
+        h4.my-4 Our Location
+        p.mb-1
+          i.fa.fa-home.mr-2.footer-icon
+          |                     along mawanda Road , near the police
+      .col-lg-4.mx-lg-auto.text-center.col-md-8.col-12(data-aos='fade-up' data-aos-delay='400')
+        p.copyright-text
+          | Copyright &copy; 2021 Zaabu Washing Limited
+          br
+          a(rel='nofollow noopener' href='https://templatemo.com') Design: alicia21R
+      .col-lg-4.mx-lg-auto.col-md-6.col-12(data-aos='fade-up' data-aos-delay='500')
+        ul.footer-link
+          li
+            a(href='register.html') Work with us
+          li
+            a(href='#') Privacy
+      .col-lg-3.mx-lg-auto.col-md-6.col-12(data-aos='fade-up' data-aos-delay='600')
+        ul.social-icon
+          li
+            a.fa.fa-instagram(href='#')
+          li
+            a.fa.fa-twitter(href='#')
+          li
+            a.fa.fa-facebook(href='#')
+// SCRIPTS
+script(src='js/jquery.min.js')
+script(src='js/bootstrap.min.js')
+script(src='js/aos.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/smoothscroll.js')
+script(src='js/custom.js')

@@ -1,0 +1,37 @@
+extends layout
+
+block content 
+ main.container
+    .bg-light.p-5.rounded.mt-3
+      h1 Register Here
+      form(action='/' method='POST')
+        hr
+        label#icon(for='name')
+          i.fa.fa-user-circle-o
+        input#name(type='text' name='uname' placeholder='Enter Your Name' required='')
+        label#icon(for='date')
+          i.fa.fa-calendar-check-o
+        input#date(type='text' onclick="(this.type='date')" name='dob' placeholder='Date of Birth')
+        label#icon(for='telephone')
+          i.fa.fa-phone
+        input#telephone(type='tel' name='phoneNumber' placeholder='Enter Phone Number' required='')
+        label#icon(for='nok')
+          i.fa.fa-user-circle-o
+        input#nok(type='text' name='name' placeholder='Enter Your Next of kin' required='')
+        label#icon(for='telephone')
+          i.fa.fa-phone
+        input#telephone(type='tel' name='contact' placeholder='Enter Contact Information' required='')
+        label#icon(for='address')
+          i.fa.fa-home
+        select#address(type='text' name='homeAddress' placeholder='Home address')
+          option(value='home address' selected='') Home Address
+          option(value='katanga') katanga
+          option(value='kalerwe') kalerwe
+          option(value='mawanda road') mawanda road
+          option(value='other') other
+        .TCs
+          input(type='radio' value='none' id='T&c' name='T&Cs')
+          label.radio(for='T&c') I agree to the terms and conditions
+        hr
+        .btn-block
+          button(type='submit' href='/') Submit

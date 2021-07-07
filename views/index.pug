@@ -1,0 +1,165 @@
+doctype html
+head
+  title ZaWash || Zaabu Washing Bay
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=Edge')
+  meta(name='Washing Bay' content='Services')
+  meta(name='keywords' content='washingbay washing-bay-near-you')
+  meta(name='author' content='alicia')
+  meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+  link(rel='stylesheet' href='css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/font-awesome.min.css')
+  link(rel='stylesheet' href='css/aos.css')
+  link(rel='stylesheet' href='css/owl.carousel.min.css')
+  link(rel='stylesheet' href='css/owl.theme.default.min.css')
+  // MAIN CSS
+  link(rel='stylesheet' href='css/style.css')
+// MENU BAR
+nav.navbar.navbar-expand-lg
+  .container
+    a.navbar-brand(href='index.html')
+      i.fa.fa-car
+      |               ZaWash
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link.smoothScroll(href='#about') Home
+        li.nav-item
+          a.nav-link.smoothScroll(href='#project') Services
+        li.nav-item
+          a.nav-link(href='about.html') About
+        li.nav-item
+          a.nav-link.contact(href='login.html') Sign In
+// HERO
+section.hero.hero-bg.d-flex.justify-content-center.align-items-center
+  .container
+    .row
+      .col-lg-6.col-md-10.col-12.d-flex.flex-column.justify-content-center.align-items-center
+        .hero-text
+          h1.text-white(data-aos='fade-up') Give your car a good quality clean
+          a.custom-btn.btn-bg.btn.mt-3(href='booking.html' data-aos='fade-up' data-aos-delay='100') Book Now!
+          strong.d-block.py-3.pl-5.text-white(data-aos='fade-up' data-aos-delay='200')
+            i.fa.fa-phone.mr-2
+            |  +256 712345678
+      .col-lg-6.col-12
+        .hero-image(data-aos='fade-up' data-aos-delay='300')
+          img.img-fluid(src='images/clement-m-Ng3xrviPrhk-unsplash.jpg' alt='working girl')
+// ABOUT
+section#about.about.section-padding.pb-0
+  .container
+    .row
+      .col-lg-7.mx-auto.col-md-10.col-12
+        .about-info
+          h2.mb-4(data-aos='fade-up')
+            | The best 
+            strong Washing Bay
+            |  in Kampala,Uganda
+          p.mb-0(data-aos='fade-up')
+            | We are located along Mawanda Road.
+            br
+            |  We are open from 
+            br
+            |  8:00am-7:00pm week days. 
+            br
+            |  8:00am - 9:00pm weekends
+        .about-image(data-aos='fade-up' data-aos-delay='200')
+          img.img-fluid(src='images/images1.jpeg' alt='office')
+// PROJECT
+section#project.project.section-padding
+  .container-fluid
+    .row
+      .col-lg-12.col-12
+        h2.mb-5.text-center(data-aos='fade-up')
+          | Car Wash
+          strong Packages
+        #project-slide.owl-carousel.owl-theme
+          .item.project-wrapper(data-aos='fade-up' data-aos-delay='100')
+            img.img-fluid(src='images/adrian-dascal-Ce_gQ7Z0eAc-unsplash.jpg' alt='project image')
+            .project-info
+              small small cars
+              h3
+                a(href='booking.html')
+                  span UGX 15000 shs
+                  i.fa.fa-angle-right.project-icon
+          .item.project-wrapper(data-aos='fade-up')
+            img.img-fluid(src='images/tg.jpeg' alt='project image')
+            .project-info
+              small BodaBodas
+              h3
+                a(href='booking.html')
+                  span UGX 5000shs
+                  i.fa.fa-angle-right.project-icon
+          .item.project-wrapper(data-aos='fade-up')
+            img.img-fluid(src='images/sider.jpg' alt='project image')
+            .project-info
+              small Full Wash
+              h3
+                a(href='booking.html')
+                  span UGX 20000 shs
+                  i.fa.fa-angle-right.project-icon
+          .item.project-wrapper(data-aos='fade-up')
+            img.img-fluid(src='images/clement-m-Ng3xrviPrhk-unsplash.jpg' alt='project image')
+            .project-info
+              small Engine
+              h3
+                a(href='booking.html')
+                  span UGX 10000
+                  i.fa.fa-angle-right.project-icon
+          .item.project-wrapper(data-aos='fade-up')
+            img.img-fluid(src='images/andre-tan-pRppMPh4Zho-unsplash.jpg' alt='project image')
+            .project-info
+              small Medium Cars
+              h3
+                a(href='booking.html')
+                  span UGX 15000 shs
+                  i.fa.fa-angle-right.project-icon
+footer.site-footer
+  .container
+    .row
+      .col-lg-5.mx-lg-auto.col-md-8.col-10
+        h1.text-white(data-aos='fade-up' data-aos-delay='100')
+          | Quality service 
+          strong For You
+          |  only.
+      .col-lg-3.col-md-6.col-12(data-aos='fade-up' data-aos-delay='200')
+        h4.my-4 Contact Info
+        p.mb-1
+          i.fa.fa-phone.mr-2.footer-icon
+          |               +257 712345678
+        p
+          a(href='#')
+            i.fa.fa-envelope.mr-2.footer-icon
+            |                 hello@zawash.com
+      .col-lg-3.col-md-6.col-12(data-aos='fade-up' data-aos-delay='300')
+        h4.my-4 Our Location
+        p.mb-1
+          i.fa.fa-home.mr-2.footer-icon
+          |               along mawanda Road , near the police
+      .col-lg-4.mx-lg-auto.text-center.col-md-8.col-12(data-aos='fade-up' data-aos-delay='400')
+        p.copyright-text
+          | Copyright &copy; 2021 Zaabu Washing Limited
+          br
+          a(rel='nofollow noopener' href='https://templatemo.com') Design: alicia21R
+      .col-lg-4.mx-lg-auto.col-md-6.col-12(data-aos='fade-up' data-aos-delay='500')
+        ul.footer-link
+          li
+            a(href='mailto:zawash@gmail.com') Work with us
+          li
+            a(href='#') Privacy
+      .col-lg-3.mx-lg-auto.col-md-6.col-12(data-aos='fade-up' data-aos-delay='600')
+        ul.social-icon
+          li
+            a.fa.fa-instagram(href='#')
+          li
+            a.fa.fa-twitter(href='#')
+          li
+            a.fa.fa-facebook(href='#')
+// SCRIPTS
+script(src='js/jquery.min.js')
+script(src='js/bootstrap.min.js')
+script(src='js/aos.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/smoothscroll.js')
+script(src='js/custom.js')

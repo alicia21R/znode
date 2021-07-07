@@ -37,13 +37,13 @@ html, body {
     form {
     margin: 0 30px;
     }
-    .account-type, .gender {
+    .account-type, .TCs {
     margin: 15px 0;
     }
-
-    /* input[type=radio] {
-    display: none; 
-    }
+    input[type=radio] {
+        display: none; 
+        }
+    
     label#icon {
     margin: 0;
     border-radius: 5px 0 0 5px;
@@ -79,11 +79,11 @@ html, body {
     border-right: none;
     transform: rotate(-45deg);
     opacity: 0;
-    } */
+    } 
     input[type=radio]:checked + label:after {
     opacity: 1;
     }
-    input[type=text], input[type=time],input[type=number], input[type=date],select {
+    input[type=text] , input[type=password], input[type=time],input[type=number], input[type=date], input[type=tel],select {
     width: calc(100% - 57px);
     height: 36px;
     margin: 13px 0 0 -5px;

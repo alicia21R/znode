@@ -1,15 +1,35 @@
 //DEPENDENCIES
 const express = require('express');
 const path = require('path'); 
+const mongoose = require('mongoose');
+require('dotenv').config();
+
 const index= require('./routes/index');   
 const aboutRoute= require('./routes/about');   
 const loginRoute= require('./routes/login')
-const registerRoute= require('./routes/register')
-const trackerRoute= require('./routes/tracker')
-const cmRoute= require('./routes/costmonitor')
-const bookingRoute= require('./routes/booking')
+const registerRoute= require('./routes/register');
+const trackerRoute= require('./routes/tracker');
+const cmRoute= require('./routes/costmonitor');
+const bookingRoute= require('./routes/booking');
+
+
+
 //INSTANTIATION
 const app = express();
+
+//MONGODB CONNECTION
+mongoose.connect(process.env.DATABASE, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+    });
+    
+    mongoose.connection
+    .on('open', () => {
+    console.log('Mongoose connection open');
+    })
+    .on('error', (err) => {
+    console.log(`Connection error: ${err.message}`);
+    }); 
 
 //CONFIGURATION FOR THE TEMPLATE ENGINE: PUG
 app.set('view engine', 'pug');

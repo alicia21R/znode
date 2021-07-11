@@ -1,4 +1,6 @@
 
+
+//validation for the login form
   $(function () {
 
     // MENU

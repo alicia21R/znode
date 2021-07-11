@@ -4,7 +4,7 @@ block content
  main.container
     .bg-light.p-5.rounded.mt-3
       h1 Register Here
-      form(action='/' method='POST')
+      form(action='/register' method='POST')
         hr
         label#icon(for='name')
           i.fa.fa-user-circle-o
@@ -17,7 +17,10 @@ block content
         input#telephone(type='tel' name='phoneNumber' placeholder='Enter Phone Number' required='')
         label#icon(for='nok')
           i.fa.fa-user-circle-o
-        input#nok(type='text' name='name' placeholder='Enter Your Next of kin' required='')
+        input#nok(type='text' name='NOK' placeholder='Enter Your Next of kin' required='')
+        label#icon(for='relationship')
+          i.fa.fa-user-circle-o
+        input#nok(type='text' name='relationship' placeholder='Relationship With Next of kin' required='')
         label#icon(for='telephone')
           i.fa.fa-phone
         input#telephone(type='tel' name='contact' placeholder='Enter Contact Information' required='')

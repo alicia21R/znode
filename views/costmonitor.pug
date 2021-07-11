@@ -4,11 +4,11 @@ block content
   main.container
     .bg-light.p-5.rounded.mt-3
       h1 Cost Monitor ZaWash
-      form(action='/' method='POST')
+      form(action='/cost-Monitor' method='POST')
         hr
         label#icon(for='arrivalTime')
           i.fa.fa-clock-o
-        input#arrivalTime(type='text' onclick="(this.type='time')" name='checkin time' placeholder='Arrival Time' required='')
+        input#arrivalTime(type='text' onclick="(this.type='time')" name='checkinTime' placeholder='Arrival Time' required='')
         label#icon(for='date')
           i.fa.fa-calendar-check-o
         input#date(type='text' onclick="(this.type='date')" name='date' placeholder='Date')
@@ -23,7 +23,7 @@ block content
         input#cost(type='number' name='detergent' placeholder='Powdered Detergent ' required='')
         label#icon(for='cost')
           i.fa.fa-car
-        input#cost(type='number' name='electricityUnit' placeholder='Electricity Unit' required='')
+        input#cost(type='number' name='electricUnit' placeholder='Electricity Unit' required='')
         label#icon(for='washpay')
           i.fa.fa-car
         select#washpay(type='currency' name='washerPay' placeholder='Daily Pay')

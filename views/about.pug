@@ -17,7 +17,7 @@ head
 // MENU BAR
 nav.navbar.navbar-expand-lg.position-absolute
   .container
-    a.navbar-brand(href='index.html')
+    a.navbar-brand(href='/')
       i.fa.fa-car
       |               ZaWash
     button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
@@ -25,11 +25,11 @@ nav.navbar.navbar-expand-lg.position-absolute
     #navbarNav.collapse.navbar-collapse
       ul.navbar-nav.ml-auto
         li.nav-item
-          a.nav-link(href='index.html') Home
+          a.nav-link(href='/') Home
         li.nav-item
           a.nav-link.smoothScroll(href='#contact') Contact
         li.nav-item
-          a.nav-link(href='register.html') Register
+          a.nav-link(href='/register') Register
 // CONTACT
 section.contact.section-padding
   .container
@@ -50,7 +50,7 @@ section.contact.section-padding
           a(href='register.html') zawash@gmail.com
         p Please leave your message here to keep in touch.
       .col-lg-8.mx-auto.col-md-10.col-12
-        form.contact-form(action='/about' method='post' data-aos='fade-up' data-aos-delay='300' role='form')
+        form.contact-form( method='post' data-aos='fade-up' data-aos-delay='300' role='form' action='/about')
           .row
             .col-lg-6.col-12
               input.form-control(type='text' name='name' placeholder='Name')
@@ -86,7 +86,7 @@ footer#contact.site-footer
         p.copyright-text
           | Copyright &copy; 2021 Zaabu Washing Limited
           br
-          a(rel='nofollow noopener' href='https://templatemo.com') Design: alicia21R
+          a(rel='nofollow noopener' href='#') Design: alicia21R
       .col-lg-4.mx-lg-auto.col-md-6.col-12(data-aos='fade-up' data-aos-delay='500')
         ul.footer-link
           li

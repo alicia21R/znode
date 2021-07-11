@@ -1,19 +1,16 @@
 extends layout
 
-block styles
-    link(rel="stylesheet" href="css/booking.css")
-
 block content
   .row
     .col-sm-12
       .row
         .col-md-6.offset-md-6
-          form.main_form
+          form.main_form(action='/booking' method='POST') 
             .titlepage
               h2 BOOK A CAR WASH WITH US
             .row
               .col-md-12
-                select
+                select(name="washPackage")
                   option(value='0') Choose Car Wash Package
                   option(value='1') FULL WASH
                   option(value='2') ENGINE
@@ -21,14 +18,14 @@ block content
                   option(value='2') SMALL CAR
                   option(value='2') MEDIUM CAR
               .col-md-12
-                select
+                select(name="carType")
                   option(value='0') Choose Car Type 
                   option(value='1') SMALL CAR
                   option(value='2') MEDIUM SIZE
                   option(value='3') LARGE
                   option(value='4') OTHER
               .col-md-12
-                select
+                select(name="payment")
                   option(value='0') PAYMENT
                   option(value='1') AIRTEL MONEY
                   option(value='2') MTN MOMO
